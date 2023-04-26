@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <link rel='icon' href='./Main/Icon.png'>
+        <meta charset='utf-8'>
+        <title>Собаки</title>
+
+        <style>
+            * {
+                color: #eee;
+                font-family: 'Calibri';
+            }
+
+
+            body {
+                background: #111;
+                margin: 0;
+            }
+
+
+            marquee {
+                font-size: 3vh;
+            }
+
+
+
+
+            .content {
+                display: grid;
+                padding: 2% 10%;
+            }
+
+
+            .content__text {
+                font-size: 3vh;
+                text-align: justify;
+            }
+
+
+            .content__tile {
+                display: grid;
+                grid-auto-flow: column;
+                justify-items: center;
+            }
+
+
+            .content__tile_item {
+                display: grid;
+                justify-items: center;
+                text-decoration: none;
+            }
+
+            .content__tile_item:hover .tile_item_subtitle {
+                color: #fff;
+            }
+
+            .content__tile_item:hover .tile_item_line {
+                width: 100%
+            }
+
+
+            .content__title {
+                justify-self: center;
+                text-align: center;
+            }
+
+            .content__title.main {
+                font-size: 7vh;
+            }
+
+            .content__title.secondly {
+                font-size: 6vh;
+                margin-bottom: 7vh;
+                margin-top: 10vh;
+            }
+
+
+            .feedback {
+                align-items: center;
+                display: grid;
+                grid-gap: 3vw;
+                justify-items: center;
+            }
+
+
+            .feedback__form {
+                display: grid;
+                grid-auto-flow: column;
+                grid-gap: 2vw;
+            }
+
+
+            .feedback__input {
+                background: transparent;
+                border-radius: 1vw;
+                border: 0.2vw solid #bbba;
+                font-size: 3vh;
+                font-weight: 600;
+                height: 6vh;
+                outline: none;
+                padding: 0.7vw;
+                resize: none;
+                width: 25vw;
+            }
+
+            .feedback__input:focus {
+                border: 0.2vw solid #fffd;
+            }
+
+
+            .feedback__submit {
+                background: transparent;
+                border-radius: 1vw;
+                border: 0.2vw solid #bbba;
+                cursor: pointer;
+                font-size: 3vh;
+                font-weight: 800;
+                padding: 1vw;
+            }
+
+             .feedback__submit:active {
+                border: 0.2vw solid #000;
+            }
+
+           .feedback__submit:hover {
+                background: #fff;
+                border: 0.2vw solid #fff;
+                color: #111;
+            }
+
+
+            .feedback__title {
+                font-size: 6vh;
+                margin-top: 7vh;
+                margin: 0;
+            }
+
+
+            .footer {
+                background: #000;
+                margin-top: 20vh;
+                overflow: hidden;
+                padding: 2%;
+            }
+
+            .footer p {
+                font-size: 3vh;
+                margin: 1vh;
+                user-select: none;
+            }
+
+
+            .landing {
+                background: url('./Main/Assets/Images/Landing_background.jpg') center / cover;
+                box-sizing: border-box;
+                display: grid;
+                height: 100vh;
+            }
+
+
+            .landing__anchor_down {
+                align-self: end;
+                color: #bbba;
+                font-size: 7vh;
+                grid-area: 1 / 1 / -1 / -1;
+                justify-self: center;
+                margin-bottom: 2%;
+                text-decoration: none;
+                user-select: none;
+            }
+
+            .landing__anchor_down:hover {
+                color: #fffd;
+            }
+
+
+            .landing__header {
+                align-self: center;
+                border-right: 1vh solid #aaaa;
+                grid-area: 1 / 1 / -1 / -1;
+                margin-top: 10%;
+                padding-left: 5%;
+                padding-right: 1%;
+                user-select: none;
+                width: 40%;
+            }
+
+
+            .landing__header_description {
+                font-size: 4vh;
+            }
+
+
+            .landing__header_title {
+                font-size: 10vh ;
+            }
+
+
+            .landing__overlay {
+                background: #000a;
+                grid-area: 1 / 1 / -1 / -1;
+                height: 100vh;
+            }
+
+
+            .tile_item_icon {
+                user-select: none;
+                width: 5vw;
+            }
+
+
+            .tile_item_line {
+                background: #fffd;
+                height: 0.4vh;
+                transition: width 0.3s linear;
+                width: 0%;
+            }
+
+
+            .tile_item_subtitle {
+                color: #bbba;
+                font-size: 3vh;
+                margin-bottom: 1vh;
+                margin-top: 4vh;
+                user-select: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class='landing'>
+            <div class='landing__overlay'></div>
+
+            <div class='landing__header'>
+                <div class='landing__header_title'>Собаки —</div>
+                <div class='landing__header_description'>единственные животные, способные распознавать людские эмоции и сопереживать своим хозяевам.</div>
+            </div>
+
+            <a class='landing__anchor_down' href='#anchor'>&#11167;</a>
+        </div>
+
+
+        <div class='content'>
+            <h1 class='content__title main' id='anchor'>Собака — верный и веселый друг</h1>
+            <p class='content__text'>Собака – это верный и веселый друг, надежный защитник и преданный питомец. Считается, что волк является современным предком собаки. Сегодня собака находится в числе самых популярных и распространенных домашних животных. Среди других питомцев собак выделяет ум, обучаемость и неиссякаемая энергия. За эти качества собак часто используют для охраны, на охоте и во многих других сферах. Собака – это действительно друг человека.</p>
+            <p class='content__text'>Многие в детстве мечтали завести собаку. Если Вы еще не осуществили свою мечту, но готовы впустить в свой дом и свое сердце четвероногого друга, наш сайт поможет сделать правильный выбор.</p>
+
+            <h2 class='content__title secondly'>Что мы предлагаем?</h2>
+            <div class='content__tile'>
+                <a class='content__tile_item' href='Pages/Dogs/index.html'>
+                    <img class='tile_item_icon' src='./Main/Assets/Images/Dog.png'>
+                    <div class='tile_item_subtitle'>О собаках</div>
+                    <div class='tile_item_line'></div>
+                </a>
+
+                <a class='content__tile_item' href='Pages/Parodies/index.html'>
+                    <img class='tile_item_icon' src='./Main/Assets/Images/Parodies.png'>
+                    <div class='tile_item_subtitle'>Породы собак</div>
+                    <div class='tile_item_line'></div>
+                </a>
+
+                <a class='content__tile_item' href='Pages/Facts/index.html'>
+                    <img class='tile_item_icon' src='./Main/Assets/Images/Facts.png'>
+                    <div class='tile_item_subtitle'>Интересные факты</div>
+                    <div class='tile_item_line'></div>
+                </a>
+
+                <a class='content__tile_item' href='Pages/Contacts/index.html'>
+                    <img class='tile_item_icon' src='./Main/Assets/Images/Contacts.png'>
+                    <div class='tile_item_subtitle'>Как нас найти?</div>
+                    <div class='tile_item_line'></div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class='feedback'>
+            <h2 class='feedback__title'>Понравился сайт? Пиши комментарий!</h2>
+
+            <form class='feedback__form'>
+                <input class='feedback__input' required placeholder='Введите имя'>
+                <input  class='feedback__input' required placeholder='Введите email' type='email'>
+                <textarea class='feedback__input' required rows='1'placeholder='Введите сообщение'></textarea>
+                <button class='feedback__submit'>Отправить</button>
+            </form>
+        </div>
+
+
+        <div class='footer'>
+            <p>Разработал: ученик IX «А» класса МКОУ Семилукской СОШ № 1</p>
+            <p>© <a target='_blank' href='https://vk.com/nkkos'>Николай Кошелев</a> 2022 — 2023 учебный год.</p>
+            <marquee>Все права защищены. Все права защищены. Все права защищены. Все права защищены. Все права защищены. Все права защищены. Все права защищены.</marquee>
+        </div>
+    </body>
+</html>

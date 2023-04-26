@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <link rel='icon' href='./Icon.png'>
+        <meta charset='utf-8'>
+        <title>Пароды собак</title>
+
+        <style>
+            * {
+                color: #eee;
+                font-family: 'Calibri';
+            }
+
+
+            body {
+                background: #1f2121;
+                margin: 0;
+            }
+
+
+            marquee {
+                font-size: 3vh;
+            }
+
+
+
+
+           .content {
+                display: grid;
+                padding: 2% 10%;
+            }
+
+
+            .content__image {
+                box-shadow: 0 0 8px 0 #00000033;
+                margin: auto;
+                pointer-events: none;
+                user-select: none;
+                width: 75vw;
+            }
+
+
+            .content__text {
+                font-size: 3vh;
+                text-align: justify;
+            }
+
+            .content__text.list {
+                margin: 0;
+            }
+
+
+            .content__title {
+                justify-self: center;
+                text-align: center;
+            }
+
+            .content__title.main {
+                font-size: 6vh;
+            }
+
+            .content__title.secondly {
+                font-size: 5vh;
+                margin-bottom: 0;
+                margin-top: 6vh;
+            }
+
+
+            .footer {
+                background: #000;
+                margin-top: 20vh;
+                overflow: hidden;
+                padding: 2%;
+            }
+
+            .footer p {
+                font-size: 3vh;
+                margin: 1vh;
+                user-select: none;
+            }
+
+
+            .menu {
+                align-content: center;
+                background: #000d;
+                box-shadow: 0 0 8px 0 #00000033;
+                display: grid;
+                grid-auto-flow: column;
+                height: 10vh;
+                justify-content: space-evenly;
+                position: sticky;
+                top: 0;
+            }
+
+
+            .menu__item:hover .menu__item_line {
+                width: 100%;
+            }
+
+            .menu__item:hover .menu__item_link {
+                color: #fff;
+            }
+
+            .menu__item.сurrent .menu__item_line {
+                width: 100%;
+            }
+
+            .menu__item.сurrent .menu__item_link {
+                color: #fff;
+            }
+
+
+            .menu__item_line {
+                background: #fffd;
+                height: 0.3vh;
+                transition: width 0.3s linear;
+                width: 0%;
+            }
+
+
+            .menu__item_link {
+                color: #bbba;
+                font-size: 3vh;
+                margin-bottom: 1vh;
+                text-decoration: none;
+                user-select: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class='menu'>
+            <div class='menu__item'>
+                <a class='menu__item_link' href='../../index.html'>Главная</a>
+                <div class='menu__item_line'></div>
+            </div>
+
+            <div class='menu__item'>
+                <a class='menu__item_link' href='../Dogs/index.html'>О собаках</a>
+                <div class='menu__item_line'></div>
+            </div>
+
+            <div class='menu__item сurrent'>
+                <a class='menu__item_link' href='../Parodies/index.html'>Породы собак</a>
+                <div class='menu__item_line'></div>
+            </div>
+
+            <div class='menu__item'>
+                <a class='menu__item_link' href='../Facts/index.html'>Интересные факты</a>
+                <div class='menu__item_line'></div>
+            </div>
+
+            <div class='menu__item'>
+                <a class='menu__item_link' href='../Contacts/index.html'>Наши контакты</a>
+                <div class='menu__item_line'></div>
+            </div>
+        </div>
+
+
+        <div class='content'>
+            <h1 class='content__title main'>Сколько существует пород собак?</h1>
+
+            <p class='content__text'>В настоящее время на земном шаре кинологическими организациями признано около четырех сотен пород. Как правило, все они разделены на десять породных групп. Собаки отличаются способностью к обучению, что позволяет использовать их как караульных, розыскных, охотничьих, спасателей, поводырей и просто животных – компаньонов.</p>
+            <p class='content__text'>На данной страницы будут представлены лишь некоторые из многочисленных видов.</p>
+            <img class='content__image' src='./Assets/Images/Main.jpg'>
+
+            <h2 class='content__title secondly'>Английский кокер-спаниель</h2>
+            <p class='content__text'>Английский кокер-спаниель – это замечательная порода собак, которая отлично подойдет в качестве питомца и доставит много радости хозяину. Порода английский кокер-спаниель является охотничьей и раньше использовалась только для охоты на птицу. Сегодня собака английский кокер-спаниель популярный питомец, она очень добродушная и активная.</p>
+            <img class='content__image' src='./Assets/Images/Kocker_spaniel.jpg'>
+
+            <h2 class='content__title secondly'>Бернский зенненхунд</h2>
+            <p class='content__text'>Бернский зенненхунд – порода собак родом из Швейцарии, которую также называют бернская овчарка. Порода бернский зенненхунд является пастушьей. Собака бернский зенненхунд удивительна, ведь она является олицетворением силы и бесстрашия, преданности и ума.</p>
+            <img class='content__image' src='./Assets/Images/Bernskiy_zennenhund.jpg'>
+
+            <h2 class='content__title secondly'>Акита-ину</h2>
+            <p class='content__text'>Акита-ину – это японская порода собак, которая появилась на острове Хонсю. Порода акита-ину является крупнейшей японской собакой из шпицеобразных. Собака акита-ину истинный охотник. Весьма продолжительное время их использовали для охоты на оленей, кабанов и даже медведей. Порода собак акита-ину является национальным достоянием Японии.</p>
+            <img class='content__image' src='./Assets/Images/Akita_inu.jpg'>
+
+            <h2 class='content__title secondly'>Австралийская овчарка</h2>
+            <p class='content__text'>При получении этих животных использовали собак пород колли, бернский зенненхунд и пиренейская овчарка. Родина австралийцев — США. Сейчас эти собаки распространены по всему миру. Порода имеет другое название — аусси. Подвижные и невероятно трудолюбивые животные. Они быстро обучаются, стремятся угодить владельцу. Австралийцы дружелюбны к другим животным, редко проявляют агрессию. Окрас может быть любым, но более распространен триколор (сочетание белого, черного и рыжего).</p>
+            <img class='content__image' src='./Assets/Images/Australian_shepherd.jpg'>
+
+            <h2 class='content__title secondly'>Бассет-хаунд</h2>
+            <p class='content__text'>Английская порода, которая была признана в 1955 году. Их предки использовались в пешей охоте. Они пробирались в густые заросли и поднимали зверя. В середине XIX века эти животные получили популярность у аристократов. Бассеты обладают уникальной внешностью. У них длинное туловище и короткие ноги, но при этом эти собаки очень подвижны и азартны, хорошо обучаются и находятся в постоянном движении. Характерная особенность бассетов — очень длинные и широкие висячие уши.</p>
+            <img class='content__image' src='./Assets/Images/Basset_hound.jpg'>
+
+            <h2 class='content__title secondly'>Вельш-корги</h2>
+            <p class='content__text'>Животные средних размеров, родиной которых является Уэльс. Существует две разновидности: кардиган и пемброк. Корги — активные и преданные животные. Они отлично уживутся с другими домашними питомцами, очень редко проявляют агрессию. Все корги любят играть, но хорошо чувствуют настроение владельца и не склонны навязывать общение. Представители породы великолепно поддаются дрессировке. Окрасы разные: рыжий, черно-подпалый, палевый, соболь, тигровый.</p>
+            <img class='content__image' src='./Assets/Images/Korgi.jpg'>
+
+            <h2 class='content__title secondly'>Далматин</h2>
+            <p class='content__text'>Хорватская порода. Название ей дала область Далмация, которая расположена на Балканском полуострове. Ученые утверждают, что такие собаки существуют уже много тысячелетий, так как во время раскопок были найдены древние картины с похожими животными. Мощная, выносливая и активная собака. Далматины уравновешенные, спокойные, хорошо поддается всем видам дрессировки. Особенностью породы является уникальный окрас: на белом фоне разбросаны черные или коричневые округлые пятнышки, размером с монету.</p>
+            <img class='content__image' src='./Assets/Images/Dalmatin.jpg'>
+        </div>
+
+
+        <div class='footer'>
+            <p>Разработал: ученик IX «А» класса МКОУ Семилукской СОШ № 1</p>
+            <p>© <a target='_blank' href='https://vk.com/nkkos'>Николай Кошелев</a> 2022 — 2023 учебный год.</p>
+            <marquee>Все права защищены. Все права защищены. Все права защищены. Все права защищены. Все права защищены. Все права защищены. Все права защищены.</marquee>
+        </div>
+    </body>
+</html>
